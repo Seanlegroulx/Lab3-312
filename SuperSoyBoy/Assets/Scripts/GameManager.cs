@@ -13,6 +13,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class GameManager : MonoBehaviour
 {
+
+    public GameObject buttonPrefab;
+    private string selectedLevel;
     public static GameManager instance;
     public string playerName;
     public void RestartLevel(float delay)
@@ -106,6 +109,7 @@ public class GameManager : MonoBehaviour
             DisplayPreviousTimes();
         }
     }
+
 
     // Start is called before the first frame update
     void Start()
